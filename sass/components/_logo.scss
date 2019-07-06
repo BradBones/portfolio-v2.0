@@ -1,0 +1,32 @@
+.logo {
+    // Parent div styling to great the round cut-off effect
+    padding: .6rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &__logo-text {
+        font-size: 3.5rem;
+        font-weight: 900;
+        line-height: 3rem;
+        text-transform: uppercase;
+        color: $color-white;
+        //position: fixed;
+
+        &--line-1 {
+            position: relative;
+            left: 0px;
+        }
+
+        &--line-2 {
+            position: relative;
+            left: 2px;
+        }
+
+        &--line-3 {
+            position: relative;
+            left: 8px;
+        }
+    }
+    
+}
