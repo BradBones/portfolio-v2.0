@@ -8,13 +8,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
-  @media only screen and (max-width: 75em) {
-    html {
-      font-size: 50%; } }
 
 body {
   font-family: "Nunito", sans-serif;
-  color: #6D5D4B;
+  color: #636363;
   font-weight: 300;
   line-height: 1.6; }
 
@@ -24,21 +21,23 @@ body {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .header {
-  background-color: red;
+  background-color: #f9f7f6;
   grid-column: full-start / full-end; }
 
 .works {
-  background-color: green;
+  background-color: #4b4b4b;
+  color: #fff;
   grid-column: full-start / full-end; }
 
 .bio {
-  background-color: blue;
+  background-color: #aaa;
   grid-column: full-start / full-end; }
 
 .skills {
-  background-color: pink;
+  background-color: #636363;
+  color: #fff;
   grid-column: full-start / full-end; }
 
 .footer {
-  background-color: purple;
+  background-color: #f9f7f6;
   grid-column: full-start / full-end; }

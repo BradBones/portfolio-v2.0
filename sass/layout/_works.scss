@@ -1,5 +1,6 @@
 .works {
-    background-color: green;
+    background-color: $color-grey-dark-1;
+    color: #fff;
 
     grid-column: full-start / full-end;
 }
