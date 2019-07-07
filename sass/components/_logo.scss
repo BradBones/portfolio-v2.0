@@ -1,3 +1,16 @@
+.logo-box-top {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.logo-box-footer {
+    position: absolute;
+    display: inline-block;
+    bottom: 1rem;
+    right: 1rem;
+}
+
 .logo {
     // Parent div styling to great the round cut-off effect
     padding: .6rem;
@@ -6,11 +19,11 @@
     overflow: hidden;
 
     &__logo-text {
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-weight: 900;
         line-height: 3rem;
         text-transform: uppercase;
-        color: $color-white;
+        color: $color-grey-light-2;
         //position: fixed;
 
         &--line-1 {
