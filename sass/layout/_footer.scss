@@ -1,5 +1,5 @@
 .footer {
-    background-color: $color-grey-light-1;
+    background-color: #fff;
     position: relative;
 
     grid-column: full-start / full-end;
@@ -12,7 +12,6 @@
 
 
     &__navigation {
-        border-top: 1px solid darkslategray;
 
         grid-row: 2 / 3;
         grid-column: 1 / max-content;
