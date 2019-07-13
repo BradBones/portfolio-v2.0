@@ -15,39 +15,58 @@
     padding: 5rem 5rem 0 5rem;
 
     display: grid;
-    grid-template-rows: repeat(4, min-content);
+    grid-template-rows: repeat(8, min-content);
     grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
 }
 
 .bio-headline {
-    font-size: 2rem;
+    font-family: $font-primary;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 900;
+    //transform: translateY(1rem);
+    
+    // Creating text color gradient
+    background-image: linear-gradient(to right, rgba(186, 9, 186, 0.584), rgba(247, 180, 192, 0.899));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    //letter-spacing: 0.2rem;
 
     grid-row: 1 / 2;
-    grid-column: 1 / -1;
+    grid-column: 4 / 5;
 }
 
-.bio-subheading {
-    font-weight: normal;
-    margin-bottom: 2rem;
+// .bio-subheading {
+//     font-weight: normal;
+//     margin-bottom: 2rem;
 
-    grid-row: 2 / 3;
-    grid-column: 1 / -1;
-}
+//     grid-row: 2 / 3;
+//     grid-column: 1 / -1;
+// }
 
-.bio-text {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+// .bio-text {
+//     font-size: 1.3rem;
+//     margin-bottom: 2rem;
 
-    grid-row: 3 / 4;
-    grid-column: 1 / -1;
-}
+//     grid-row: 3 / 4;
+//     grid-column: 1 / -1;
+// }
 
 .edu-heading {
+    text-transform: uppercase;
 
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
 }
 
 .exp-heading {
-    
+    text-transform: uppercase;
+
+    grid-row: 2 / 3;
+    grid-column: 6 / 7;
 }
 
 .bio-img {
@@ -55,9 +74,24 @@
     width: auto;
     border-radius: 50%;
 
-    grid-row: 4 / 5;
+    grid-row: 7 / 8;
     grid-column: 4 / 5;
 
     transform: translateY(40%);
     box-shadow: 0 2rem 5rem rgba(#000, 0.1);
+}
+
+// TEST
+.icon-school {
+    fill: url(#linear);
+    height: 50px;
+
+    grid-column: 2 / 3;
+}
+
+.icon-edu {
+    fill: url(#linear);
+    height: 50px;
+
+    grid-column: 6 / 7;
 }
