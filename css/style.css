@@ -421,8 +421,7 @@ body {
 
 .social-icons--header {
   grid-row: 5 / 6;
-  grid-column: 5 / 6;
-  justify-content: center; }
+  grid-column: 5 / 6; }
 
 .social-icons--footer {
   margin-left: 1rem;
@@ -432,5 +431,9 @@ body {
 .social-links {
   text-decoration: none; }
 
-.icon-edu {
+.social-icon {
+  height: 3.5rem;
   fill: #aaa; }
+  .social-icon--header {
+    margin-top: 4rem;
+    margin-left: 0.4rem; }
