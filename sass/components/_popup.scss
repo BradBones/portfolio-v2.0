@@ -7,7 +7,7 @@
     left: 0;
     z-index: 4000;
     // Hide lightbox from view until the anchor is clicked
-    opacity: 0;
+    opacity: 1;
     visibility: hidden;
 
     transition: all 0.3s;
@@ -22,7 +22,7 @@
 
 
     &__content {
-        @include absoluteCenter;
+        //@include absoluteCenter;
 
         width: 75%;
         background-color: rgba($color-white, 1);

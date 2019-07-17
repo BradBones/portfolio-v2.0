@@ -2,11 +2,12 @@
     grid-column: full-start / full-end;
 
     background-color: $color-grey-light-1;
+    background-image: linear-gradient(rgba(233, 225, 225, 0.5) 15%, $color-grey-light-1);
     padding: 4rem 8rem 8rem 8rem;
 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(4, 1fr) ;
+    grid-template-rows: 20rem min-content min-content min-content 20rem;
     grid-gap: 1.5rem;
     padding: 1.5rem;
 }
@@ -23,14 +24,14 @@
         
 
         // Creating text color gradient
-        background-image: linear-gradient(to right, rgba(186, 9, 186, 0.584), rgba(247, 180, 192, 0.899));
+        background-image: linear-gradient(to right, rgba(186, 9, 186, 0.584), rgba(247, 180, 192, 0.899) 50%);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
         //letter-spacing: 0.2rem;
 
         grid-row: 2 / 3;
-        grid-column: 2 / 4;
+        grid-column: 2 / span 5;
 
         
     }
@@ -39,25 +40,40 @@
         grid-row: 3 / 4;
         grid-column: 2 / 5;
 
-        transform: translateY(-3rem);
-        transform: translateX(0.5rem);
+        margin-top: 3rem;
+        margin-left: 0.5rem;
+        font-weight: 100;
+        font-size: 3rem;
+    
+    }
+
+    &--intro-text {
+        grid-row: 4 / 5;
+        grid-column: 2 / 5;
+
+        margin-left: 0.5rem;
+        font-weight: 100;
+        font-size: 2rem;
     }
 }
 
 .hero-content-btn {
+    
 
     &--works {
-        grid-row: 4 / 5;
+        grid-row: 5 / 6;
         grid-column: 2 / 3;
 
         height: 4rem; // TESTING
+        margin-top: 4rem;
     }
 
     &--contact {
-        grid-row: 4 / 5;
+        grid-row: 5 / 6;
         grid-column: 3 / 4;
 
         height: 4rem; // TESTING
+        margin-top: 4rem;
     }
 }
 

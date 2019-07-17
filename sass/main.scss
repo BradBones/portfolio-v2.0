@@ -5,7 +5,7 @@
 
 @import "pages/home";
 
-@import "layout/topbar";
+//@import "layout/topbar";
 @import "layout/header";
 @import "layout/works";
 @import "layout/bio";
@@ -13,9 +13,10 @@
 @import "layout/footer";
 
 @import "components/logo";
-@import "components/social-icons";
+@import "components/navigation";
+@import "components/popup"
 // @import "components/buttons";
-// @import "components/popup";
+
 // @import "components/works-cards";
 // @import "components/skills-boxes";
 // @import "components/contact-form";

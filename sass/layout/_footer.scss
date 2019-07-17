@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 1fr) ;
-    grid-gap: 1.5rem;
+    //grid-gap: 1.5rem;
     padding: 1.5rem;
 
 
@@ -52,11 +52,25 @@
         grid-row: 4 / 5;
         grid-column: 1 / max-content;
         justify-self: center;
+        align-self: center;
     }
 
     &__copyright--text {
 
     }
+}
 
+.social-icons {
+    margin-left: 1rem;
     
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+}
+
+.social-links {
+    text-decoration: none;
+}
+
+.icon-edu {
+    fill: $color-grey-light-2;
 }

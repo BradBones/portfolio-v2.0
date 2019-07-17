@@ -1,7 +1,7 @@
 // GRID LAYOUT
 .container {
     display: grid;
-    grid-template-rows: 1fr 80vh min-content repeat(4, min-content);
+    grid-template-rows: min-content min-content repeat(3, min-content);
     
     grid-template-columns:
         [full-start] minmax(6rem, 1fr)
