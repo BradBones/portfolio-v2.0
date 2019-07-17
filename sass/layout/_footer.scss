@@ -1,5 +1,5 @@
 .footer {
-    background-color: #fff;
+    background-image: linear-gradient($color-grey-light-1, rgba(233, 225, 225, 0.5) 15%);
     position: relative;
 
     grid-column: full-start / full-end;
@@ -60,17 +60,3 @@
     }
 }
 
-.social-icons {
-    margin-left: 1rem;
-    
-    grid-row: 4 / 5;
-    grid-column: 1 / 2;
-}
-
-.social-links {
-    text-decoration: none;
-}
-
-.icon-edu {
-    fill: $color-grey-light-2;
-}

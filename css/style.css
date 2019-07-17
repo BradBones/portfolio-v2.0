@@ -22,7 +22,6 @@ body {
 
 .header {
   grid-column: full-start / full-end;
-  background-color: #f9f7f6;
   background-image: linear-gradient(rgba(233, 225, 225, 0.5) 15%, #f9f7f6);
   padding: 4rem 8rem 8rem 8rem;
   display: grid;
@@ -172,7 +171,7 @@ body {
   grid-column: full-start / full-end; }
 
 .footer {
-  background-color: #fff;
+  background-image: linear-gradient(#f9f7f6, rgba(233, 225, 225, 0.5) 15%);
   position: relative;
   grid-column: full-start / full-end;
   display: grid;
@@ -203,17 +202,6 @@ body {
     grid-column: 1 / max-content;
     justify-self: center;
     align-self: center; }
-
-.social-icons {
-  margin-left: 1rem;
-  grid-row: 4 / 5;
-  grid-column: 1 / 2; }
-
-.social-links {
-  text-decoration: none; }
-
-.icon-edu {
-  fill: #aaa; }
 
 .logo-box-top {
   position: absolute;
@@ -430,3 +418,19 @@ body {
     transition: all 0.2s; }
   .popup__close:hover {
     color: #bb0a1e; }
+
+.social-icons--header {
+  grid-row: 5 / 6;
+  grid-column: 5 / 6;
+  justify-content: center; }
+
+.social-icons--footer {
+  margin-left: 1rem;
+  grid-row: 4 / 5;
+  grid-column: 1 / 2; }
+
+.social-links {
+  text-decoration: none; }
+
+.icon-edu {
+  fill: #aaa; }
