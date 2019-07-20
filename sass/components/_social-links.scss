@@ -3,6 +3,8 @@
     &--header {
         grid-row: 5 / 6;
         grid-column: 5 / 6; 
+
+        justify-self: end;
     }
 
     &--footer {
@@ -23,8 +25,7 @@
     fill: $color-grey-light-2;
 
     &--header {
-        margin-top: 4rem;
-        margin-left: 0.4rem;
+        margin: 4rem 0.5rem 0 0.4rem;
     }
 
     &--footer {
