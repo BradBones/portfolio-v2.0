@@ -24,17 +24,10 @@
 .bio-headline {
     font-family: $font-primary;
     text-transform: uppercase;
-    font-size: 5rem;
-    font-weight: 900;
-    //transform: translateY(1rem);
+    font-size: 4rem;
+    font-weight: 300;
+    color: $color-grey-light-2;
     
-    // Creating text color gradient
-    background-image: linear-gradient(to right, rgba(186, 9, 186, 0.584), rgba(247, 180, 192, 0.899));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    //letter-spacing: 0.2rem;
-
     grid-row: 1 / 2;
     grid-column: 4 / 5;
 }

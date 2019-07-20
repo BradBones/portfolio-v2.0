@@ -88,7 +88,7 @@ body {
 .card {
   background-color: #fff;
   height: 60rem;
-  width: 50rem;
+  width: 52.5rem;
   margin: 1rem;
   border-radius: 10px;
   padding: 2rem;
@@ -127,12 +127,9 @@ body {
 .bio-headline {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  font-size: 5rem;
-  font-weight: 900;
-  background-image: linear-gradient(to right, rgba(186, 9, 186, 0.584), rgba(247, 180, 192, 0.899));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #aaa;
   grid-row: 1 / 2;
   grid-column: 4 / 5; }
 
@@ -166,12 +163,47 @@ body {
   grid-column: 6 / 7; }
 
 .skills {
-  background-color: #636363;
-  color: #fff;
-  grid-column: full-start / full-end; }
+  background-color: #fff;
+  color: #000;
+  display: grid;
+  grid-column: center-start / center-end;
+  margin-bottom: 20rem; }
+
+.skills-box-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5rem;
+  align-items: center;
+  justify-items: center; }
+
+.skills-box {
+  background-color: #fff;
+  height: 30rem;
+  width: 20rem;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+  .skills-box--1 {
+    grid-column: 1 / span 1;
+    justify-self: start; }
+  .skills-box--2 {
+    grid-column: 2 / span 1; }
+  .skills-box--3 {
+    grid-column: 3 / span 1; }
+  .skills-box--4 {
+    grid-column: 4 / span 1;
+    justify-self: end; }
+  .skills-box__icon {
+    fill: #c69963;
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem); }
+  .skills-box__text {
+    font-size: 1.7rem; }
 
 .footer {
-  background-image: linear-gradient(#f9f7f6, rgba(233, 225, 225, 0.5) 15%);
+  background-image: linear-gradient(#f9f7f6 15%, rgba(233, 225, 225, 0.5));
   position: relative;
   grid-column: full-start / full-end;
   display: grid;
