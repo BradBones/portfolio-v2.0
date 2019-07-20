@@ -11,7 +11,6 @@
 
 // OVERALL ELEMENT
 .skills-box-container {
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5rem;
@@ -23,10 +22,9 @@
 
 // INDIVIDUAL FEATURES
 .skills-box {
-
     background-color: #fff; // TESTING
-    height: 30rem;
-    width: 20rem;
+    height: 35rem;
+    width: 25rem;
 
     border-radius: 10px;
     padding: 2rem;
