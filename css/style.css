@@ -74,6 +74,18 @@ body {
   height: 4rem;
   margin-top: 4rem; }
 
+.icon {
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: #aaa;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 725px;
+  left: 700px; }
+
 .works {
   background-color: #fff;
   color: #000;
@@ -212,7 +224,8 @@ body {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  border-top: 1px solid #e6e6e6; }
   .footer__navigation {
     grid-row: 2 / 3;
     grid-column: 1 / max-content;

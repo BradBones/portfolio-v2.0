@@ -70,7 +70,6 @@
 }
 
 .hero-content-btn {
-    
 
     &--works {
         grid-row: 5 / 6;
@@ -90,4 +89,20 @@
         margin-top: 4rem;
     }
 }
+
+// Arrow down (prompt to scroll) icon
+.icon {
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: $color-grey-light-2;
+    transform: rotate(90deg);
+
+    // JUST FOR TESTING (Arrow down needs to be responsive
+    position: absolute;
+    top: 725px;
+    left: 700px;
+  }
 
