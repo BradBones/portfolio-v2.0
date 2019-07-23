@@ -104,8 +104,15 @@ body {
   height: 60rem;
   width: 55rem;
   border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-rows: 300px;
+  grid-gap: 10px;
+  overflow: hidden; }
+  .card .project-hero-img {
+    height: 300px;
+    width: 100%;
+    overflow: hidden; }
   .card--1 {
     grid-row: 1 / 2;
     grid-column: 1 / span 1;
@@ -197,7 +204,9 @@ body {
   width: 25rem;
   border-radius: 10px;
   padding: 2rem;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-rows: min-content; }
   .skills-box--1 {
     grid-column: 1 / span 1;
     justify-self: start; }
@@ -209,13 +218,26 @@ body {
     grid-column: 4 / span 1;
     justify-self: end; }
   .skills-box__icon {
-    fill: #c69963;
-    width: 4.5rem;
-    height: 4.5rem;
-    grid-row: 1 / span 2;
-    transform: translateY(-1rem); }
+    width: 7.5rem;
+    height: 7.5rem;
+    grid-row: 1 / span 1;
+    margin-top: 2rem;
+    justify-self: center;
+    align-self: center; }
+    .skills-box__icon--1 {
+      fill: url(#linear--1); }
+    .skills-box__icon--2 {
+      fill: url(#linear--2); }
+  .skills-box__title {
+    justify-self: center;
+    align-self: end;
+    font-size: 2rem;
+    color: #aaa; }
   .skills-box__text {
-    font-size: 1.7rem; }
+    font-size: 1.7rem;
+    justify-self: center;
+    align-self: center;
+    text-align: center; }
 
 .footer {
   background-image: linear-gradient(#f9f7f6 15%, rgba(233, 225, 225, 0.5));
