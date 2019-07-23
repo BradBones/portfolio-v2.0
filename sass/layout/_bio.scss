@@ -2,7 +2,7 @@
     background-color: #fff;
 
     // Centers the section in the page container
-    grid-column: 2 / 10;
+    grid-column: center-start / center-end;
 
     
 }
@@ -15,7 +15,7 @@
     padding: 5rem 5rem 0 5rem;
 
     display: grid;
-    grid-template-rows: repeat(8, min-content);
+    grid-template-rows: repeat(3, min-content);
     grid-template-columns: repeat(7, 1fr);
     justify-items: center;
     align-items: center;
@@ -27,6 +27,7 @@
     font-size: 4rem;
     font-weight: 300;
     color: $color-grey-light-2;
+    margin-bottom: 2rem;
     
     grid-row: 1 / 2;
     grid-column: 4 / 5;
@@ -40,51 +41,26 @@
 //     grid-column: 1 / -1;
 // }
 
-// .bio-text {
-//     font-size: 1.3rem;
-//     margin-bottom: 2rem;
-
-//     grid-row: 3 / 4;
-//     grid-column: 1 / -1;
-// }
-
-.edu-heading {
-    text-transform: uppercase;
+.bio-text {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: -2rem;
 
     grid-row: 2 / 3;
-    grid-column: 2 / 3;
+    grid-column: 1 / -1;
 }
 
-.exp-heading {
-    text-transform: uppercase;
-
-    grid-row: 2 / 3;
-    grid-column: 6 / 7;
-}
 
 .bio-img {
     height: 150px;
     width: auto;
     border-radius: 50%;
+    
 
-    grid-row: 7 / 8;
+    grid-row: 3 / 4;
     grid-column: 4 / 5;
 
     transform: translateY(40%);
     box-shadow: 0 2rem 5rem rgba(#000, 0.1);
 }
 
-// TEST
-.icon-school {
-    fill: url(#linear);
-    height: 50px;
-
-    grid-column: 2 / 3;
-}
-
-.icon-edu {
-    fill: url(#linear);
-    height: 50px;
-
-    grid-column: 6 / 7;
-}

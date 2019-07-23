@@ -132,7 +132,7 @@ body {
 
 .bio {
   background-color: #fff;
-  grid-column: 2 / 10; }
+  grid-column: center-start / center-end; }
 
 .bio-box {
   background-color: #fff;
@@ -141,7 +141,7 @@ body {
   margin-bottom: 20rem;
   padding: 5rem 5rem 0 5rem;
   display: grid;
-  grid-template-rows: repeat(8, min-content);
+  grid-template-rows: repeat(3, min-content);
   grid-template-columns: repeat(7, 1fr);
   justify-items: center;
   align-items: center; }
@@ -152,37 +152,25 @@ body {
   font-size: 4rem;
   font-weight: 300;
   color: #aaa;
+  margin-bottom: 2rem;
   grid-row: 1 / 2;
   grid-column: 4 / 5; }
 
-.edu-heading {
-  text-transform: uppercase;
+.bio-text {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: -2rem;
   grid-row: 2 / 3;
-  grid-column: 2 / 3; }
-
-.exp-heading {
-  text-transform: uppercase;
-  grid-row: 2 / 3;
-  grid-column: 6 / 7; }
+  grid-column: 1 / -1; }
 
 .bio-img {
   height: 150px;
   width: auto;
   border-radius: 50%;
-  grid-row: 7 / 8;
+  grid-row: 3 / 4;
   grid-column: 4 / 5;
   transform: translateY(40%);
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
-
-.icon-school {
-  fill: url(#linear);
-  height: 50px;
-  grid-column: 2 / 3; }
-
-.icon-edu {
-  fill: url(#linear);
-  height: 50px;
-  grid-column: 6 / 7; }
 
 .skills {
   background-color: #fff;
@@ -228,6 +216,10 @@ body {
       fill: url(#linear--1); }
     .skills-box__icon--2 {
       fill: url(#linear--2); }
+    .skills-box__icon--3 {
+      fill: url(#linear--3); }
+    .skills-box__icon--4 {
+      fill: url(#linear--4); }
   .skills-box__title {
     justify-self: center;
     align-self: end;
