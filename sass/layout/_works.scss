@@ -19,7 +19,7 @@
 
 .card {
     background-color: #fff; // TESTING
-    height: 60rem;
+    height: 55rem;
     width: 45rem;
 
     border: 1px solid rgb(230, 230, 230);
@@ -28,15 +28,15 @@
     box-shadow: 0 2rem 5rem rgba(#000, 0.1);
 
     display: grid;
-    grid-template-rows: 300px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-template-rows: min-content min-content 1fr min-content;
+    grid-template-columns: repeat(3, 1fr) min-content;
+    //row-gap: 10px;
     overflow: hidden;
     
 
 
     .project-hero-img {
-        height: 300px;
+        //height: 300px;
         width: 95.5%;
         //overflow: hidden;
         border-radius: 10px 10px 0 0;
@@ -72,3 +72,102 @@
    
 
 }
+
+.project {
+
+    &__title {
+        margin: 0 auto;
+        transform: translateY(1.5rem);
+
+        font-size: 3rem;
+        font-weight: 300;
+        color: grey;
+
+        grid-column: 1 / -1;
+
+    }
+
+    &__description {
+        font-size: 1.5rem;
+        margin-left: 60px;
+        margin-right: 40px;
+        align-self: center;
+
+        grid-column: 1 / span 2;
+    }
+
+    &__tech-list {
+        list-style: none;
+        justify-self: start;
+        align-self: center;
+        text-align: center;
+        font-size: 1.5rem;
+
+        grid-column: 3 / 4;
+        
+
+        li {
+           padding: 0.5rem;
+   
+            &:not(:last-child) {
+                border-bottom: 1px solid lightgray;
+            }
+        }
+    }
+
+    &__footer {
+        background-color: rgba(233, 225, 225, 1);
+        margin: 0 10px 10px 10px;
+        padding: 1rem;
+        border-radius: 0 0 10px 10px;
+
+        grid-column: 1 / -1;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &--social-icons-links {
+            justify-items: start;
+            align-items: center;
+            margin-left: 38px;
+            text-decoration: none;
+            font-size: 1rem;
+
+            color: #fff;
+
+            &--github {
+                grid-column: 1 / 2;
+
+                display: grid;
+                grid-template-columns: min-content 1fr;
+            }
+
+            &--launch {
+                grid-column: 2 / 3;
+
+                display: grid;
+                grid-template-columns: min-content 1fr;
+            }
+  
+        }
+     
+        &--github-icon {
+            //grid-column: 1 / 2;
+            height: 20px;
+            margin-right: 5px;
+            fill: #fff
+        }
+    
+        &--launch-icon {
+            //grid-column: 3 / 4;
+            height: 20px;
+            margin-right: 5px;
+            fill: #fff
+        }
+    }
+}
+
+
+
+
+
