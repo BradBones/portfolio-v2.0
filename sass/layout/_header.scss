@@ -92,7 +92,7 @@
 
 // Arrow down (prompt to scroll) icon
 .icon {
-    display: inline-block;
+    //display: inline-block;
     width: 10rem;
     height: 10rem;
     stroke-width: 0;
@@ -103,6 +103,7 @@
     // JUST FOR TESTING (Arrow down needs to be responsive
     position: absolute;
     top: 725px;
-    left: 700px;
+    left: 47.2%;
+    
   }
 
