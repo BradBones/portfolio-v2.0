@@ -27,7 +27,7 @@ body {
 .hero-container {
   display: grid;
   grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 14rem)) minmax(6rem, 1fr);
-  grid-template-rows: 20rem min-content min-content min-content 20rem; }
+  grid-template-rows: 20rem repeat(5, min-content); }
 
 .hero-content--headline {
   font-family: "Lato", sans-serif;
@@ -41,6 +41,11 @@ body {
   color: transparent;
   grid-row: 2 / 3;
   grid-column: 4 / 8; }
+  .hero-content--headline--first-word-size {
+    font-size: 10.25rem; }
+  .hero-content--headline--ampersand {
+    color: rgba(186, 9, 186, 0.5);
+    position: absolute; }
 
 .hero-content--subheading {
   grid-row: 3 / 4;
@@ -59,20 +64,19 @@ body {
 
 .hero-content-btn--works {
   grid-row: 5 / 6;
-  grid-column: 2 / 3;
+  grid-column: 5 / 6;
   height: 4rem;
   margin-top: 4rem;
-  margin-left: 4.1rem;
   margin-right: 1rem; }
 
 .hero-content-btn--contact {
   grid-row: 5 / 6;
-  grid-column: 3 / 4;
+  grid-column: 6 / 7;
   height: 4rem;
   margin-top: 4rem; }
 
 .scroll-arrow-container {
-  grid-row: 5 / 6;
+  grid-row: 6 / 7;
   grid-column: 5 / 7;
   justify-self: center;
   align-self: end; }
@@ -84,10 +88,6 @@ body {
   stroke: currentColor;
   fill: #aaa;
   transform: rotate(90deg); }
-
-.logo-ampersand {
-  color: rgba(186, 9, 186, 0.5);
-  position: absolute; }
 
 .works {
   background-color: #fff;
@@ -550,3 +550,15 @@ body {
     transition: all 0.2s; }
   .popup__close:hover {
     color: #bb0a1e; }
+
+.social-icons-container--footer {
+  margin-left: 1rem;
+  grid-row: 4 / 5;
+  grid-column: 1 / 2; }
+
+.social-icons-links {
+  text-decoration: none; }
+
+.social-icon {
+  height: 3.5rem;
+  fill: #aaa; }

@@ -1,11 +1,11 @@
 .social-icons-container {
     
-    &--header {
-        grid-row: 5 / 6;
-        grid-column: 5 / 6; 
+    // &--header {
+    //     grid-row: 5 / 6;
+    //     grid-column: 5 / 6; 
 
-        justify-self: end;
-    }
+    //     justify-self: end;
+    // }
 
     &--footer {
         margin-left: 1rem;
@@ -24,9 +24,9 @@
     height: 3.5rem;
     fill: $color-grey-light-2;
 
-    &--header {
-        margin: 4rem 0.5rem 0 0.4rem;
-    }
+    // &--header {
+    //     margin: 4rem 0.5rem 0 0.4rem;
+    // }
 
     &--footer {
 

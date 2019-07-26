@@ -2,10 +2,7 @@
     grid-column: full-start / full-end;
 
     //background-color: $color-grey-light-1;
-    background-image: linear-gradient(rgba(233, 225, 225, 0.5) 15%, $color-grey-light-1);
-    
-
-    
+    background-image: linear-gradient(rgba(233, 225, 225, 0.5) 15%, $color-grey-light-1);   
 }
 
 .hero-container {
@@ -13,8 +10,8 @@
     display: grid;
     
     grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 14rem)) minmax(6rem, 1fr);
-    grid-template-rows: 20rem min-content min-content min-content 20rem;
-    
+    grid-template-rows: 20rem repeat(5, min-content);
+
 }
 
 .hero-content {
@@ -34,6 +31,15 @@
 
         grid-row: 2 / 3;
         grid-column: 4 / 8;  
+
+        // Headline typography modifications
+        &--first-word-size {
+            font-size: 10.25rem;
+        }
+        &--ampersand {
+            color: rgba(186, 9, 186, 0.5);
+            position: absolute;
+        }
     }
 
     &--subheading {
@@ -60,26 +66,25 @@
 
     &--works {
         grid-row: 5 / 6;
-        grid-column: 2 / 3;
+        grid-column: 5 / 6;
 
         height: 4rem; // TESTING
         margin-top: 4rem;
-        margin-left: 4.1rem;
         margin-right: 1rem;
     }
 
     &--contact {
         grid-row: 5 / 6;
-        grid-column: 3 / 4;
+        grid-column: 6 / 7;
 
         height: 4rem; // TESTING
         margin-top: 4rem;
     }
 }
 
-// FIX THIS HACK!!
+// FIX THIS classes HACK!!
 .scroll-arrow-container {
-    grid-row: 5 / 6;
+    grid-row: 6 / 7;
     grid-column: 5 / 7;
     justify-self: center;
     align-self: end;
@@ -92,11 +97,7 @@
     stroke: currentColor;
     fill: $color-grey-light-2;
     transform: rotate(90deg); 
-    
-  }
+}
 
-  .logo-ampersand {
-      color: rgba(186, 9, 186, 0.5);
-      position: absolute;
-  }
+
 
