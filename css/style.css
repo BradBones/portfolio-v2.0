@@ -35,30 +35,27 @@ body {
   font-size: 10rem;
   line-height: 9rem;
   font-weight: 900;
-  margin-left: -2rem;
-  background-image: linear-gradient(to right, rgba(186, 9, 186, 0.584), rgba(247, 180, 192, 0.899) 50%);
+  background-image: linear-gradient(to right, rgba(201, 87, 201, 0.584), rgba(247, 180, 192, 0.899) 50%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   grid-row: 2 / 3;
-  grid-column: 2 / span 5; }
+  grid-column: 4 / 8; }
 
 .hero-content--subheading {
   grid-row: 3 / 4;
-  grid-column: 2 / 5;
-  margin-top: 3rem;
+  grid-column: 1 / -1;
+  margin-top: 8rem;
   font-weight: 100;
   font-size: 3rem;
-  margin-left: 1rem;
-  margin-top: 4rem; }
+  text-align: center; }
 
 .hero-content--intro-text {
   grid-row: 4 / 5;
-  grid-column: 2 / 5;
+  grid-column: 5 / 7;
   font-weight: 100;
   font-size: 2rem;
-  margin-left: 4.1rem;
-  margin-top: 1rem; }
+  text-align: center; }
 
 .hero-content-btn--works {
   grid-row: 5 / 6;
@@ -74,16 +71,23 @@ body {
   height: 4rem;
   margin-top: 4rem; }
 
+.scroll-arrow-container {
+  grid-row: 5 / 6;
+  grid-column: 5 / 7;
+  justify-self: center;
+  align-self: end; }
+
 .icon {
   width: 10rem;
   height: 10rem;
   stroke-width: 0;
   stroke: currentColor;
   fill: #aaa;
-  transform: rotate(90deg);
-  position: absolute;
-  top: 725px;
-  left: 47.2%; }
+  transform: rotate(90deg); }
+
+.logo-ampersand {
+  color: rgba(186, 9, 186, 0.5);
+  position: absolute; }
 
 .works {
   background-color: #fff;
@@ -110,6 +114,7 @@ body {
   grid-template-columns: repeat(3, 1fr) min-content;
   overflow: hidden; }
   .card .project-hero-img {
+    height: 250px;
     width: 95.5%;
     border-radius: 10px 10px 0 0;
     margin: 10px;
@@ -181,11 +186,7 @@ body {
       grid-column: 2 / 3;
       display: grid;
       grid-template-columns: min-content 1fr; }
-  .project__footer--github-icon {
-    height: 20px;
-    margin-right: 5px;
-    fill: #fff; }
-  .project__footer--launch-icon {
+  .project__footer--icon {
     height: 20px;
     margin-right: 5px;
     fill: #fff; }
@@ -549,22 +550,3 @@ body {
     transition: all 0.2s; }
   .popup__close:hover {
     color: #bb0a1e; }
-
-.social-icons-container--header {
-  grid-row: 5 / 6;
-  grid-column: 5 / 6;
-  justify-self: end; }
-
-.social-icons-container--footer {
-  margin-left: 1rem;
-  grid-row: 4 / 5;
-  grid-column: 1 / 2; }
-
-.social-icons-links {
-  text-decoration: none; }
-
-.social-icon {
-  height: 3.5rem;
-  fill: #aaa; }
-  .social-icon--header {
-    margin: 4rem 0.5rem 0 0.4rem; }
