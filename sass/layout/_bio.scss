@@ -2,7 +2,12 @@
     background-color: #fff;
 
     // Centers the section in the page container
-    grid-column: center-start / center-end;
+    //grid-column: center-start / center-end;
+
+    display: grid;
+    grid-template-columns: minmax(45rem, 98rem);
+    justify-content: center;
+    margin: 0 30rem; // needs media queries
 
     
 }
@@ -17,6 +22,7 @@
     display: grid;
     grid-template-rows: repeat(3, min-content);
     grid-template-columns: repeat(7, 1fr);
+    
     justify-items: center;
     align-items: center;
 }
