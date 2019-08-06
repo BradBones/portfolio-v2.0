@@ -10,7 +10,7 @@
     display: grid;
     
     grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 14rem)) minmax(6rem, 1fr);
-    grid-template-rows: 20rem repeat(5, min-content);
+    grid-template-rows: 20rem repeat(4, min-content) 10rem;
 
 }
 
@@ -62,41 +62,35 @@
     }
 }
 
+
+// BUTTONS ARE A MESS - NEEDS FIXING!!
 .hero-content-btn {
+    width: 80%;
+    margin-top: 5rem;
 
     &--works {
         grid-row: 5 / 6;
         grid-column: 5 / 6;
-
-        height: 4rem; // TESTING
-        margin-top: 4rem;
-        margin-right: 1rem;
+        justify-self: start;
     }
 
     &--contact {
         grid-row: 5 / 6;
         grid-column: 6 / 7;
-
-        height: 4rem; // TESTING
-        margin-top: 4rem;
+        justify-self: end;
     }
 }
 
-// FIX THIS classes HACK!!
-.scroll-arrow-container {
+.arrow-test {
+    font-size: 10rem;
+    font-weight: 100;
+    color: rgb(213, 211, 211);
+    transform: rotate(90deg) translate(87px, -10px); 
+
     grid-row: 6 / 7;
     grid-column: 5 / 7;
     justify-self: center;
     align-self: end;
-}
-// Arrow down (prompt to scroll) icon
-.icon {
-    width: 10rem;
-    height: 10rem;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: $color-grey-light-2;
-    transform: rotate(90deg); 
 }
 
 

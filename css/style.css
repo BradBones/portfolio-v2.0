@@ -15,10 +15,8 @@ body {
   font-weight: 300;
   line-height: 1.6; }
 
-.container {
-  display: grid;
-  grid-template-rows: min-content min-content repeat(3, min-content);
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+.main-content {
+  margin: 0 15rem; }
 
 .header {
   grid-column: full-start / full-end;
@@ -27,7 +25,7 @@ body {
 .hero-container {
   display: grid;
   grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 14rem)) minmax(6rem, 1fr);
-  grid-template-rows: 20rem repeat(5, min-content); }
+  grid-template-rows: 20rem repeat(4, min-content) 10rem; }
 
 .hero-content--headline {
   font-family: "Lato", sans-serif;
@@ -62,32 +60,27 @@ body {
   font-size: 2rem;
   text-align: center; }
 
-.hero-content-btn--works {
-  grid-row: 5 / 6;
-  grid-column: 5 / 6;
-  height: 4rem;
-  margin-top: 4rem;
-  margin-right: 1rem; }
+.hero-content-btn {
+  width: 80%;
+  margin-top: 5rem; }
+  .hero-content-btn--works {
+    grid-row: 5 / 6;
+    grid-column: 5 / 6;
+    justify-self: start; }
+  .hero-content-btn--contact {
+    grid-row: 5 / 6;
+    grid-column: 6 / 7;
+    justify-self: end; }
 
-.hero-content-btn--contact {
-  grid-row: 5 / 6;
-  grid-column: 6 / 7;
-  height: 4rem;
-  margin-top: 4rem; }
-
-.scroll-arrow-container {
+.arrow-test {
+  font-size: 10rem;
+  font-weight: 100;
+  color: #d5d3d3;
+  transform: rotate(90deg) translate(87px, -10px);
   grid-row: 6 / 7;
   grid-column: 5 / 7;
   justify-self: center;
   align-self: end; }
-
-.icon {
-  width: 10rem;
-  height: 10rem;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: #aaa;
-  transform: rotate(90deg); }
 
 .works {
   background-color: #fff;
@@ -96,16 +89,16 @@ body {
   grid-column: center-start / center-end; }
 
 .cards-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 10rem;
-  margin: 10rem 0; }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
 
 .card {
   background-color: #fff;
   height: 55rem;
   width: 45rem;
+  margin: 4rem;
   border: 1px solid #e6e6e6;
   border-radius: 10px;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
@@ -562,3 +555,12 @@ body {
 .social-icon {
   height: 3.5rem;
   fill: #aaa; }
+
+.btn-1 {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-transform: uppercase; }

@@ -1,78 +1,15 @@
-// *************
-// HERO BUTTONS
-// *************
 
-.btn {
-    &:link,
-    &:visited {
-        background-color: transparent;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 1rem 2rem;
-        margin: 1rem;
-        display: inline-block;
-        border-radius: 5px;
-        transition: all .5s;
-        /* used to hide the btn::after effect below */
-        position: relative;
-        font-size: $default-font-size;
-    }
 
-    &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($color-black, .5);
-        
-        // Creating text color gradient
-        background-image: linear-gradient(to right, $color-light-red, $color-dark-red);
-        -webkit-background-clip: text;
-        color: transparent;
 
-        &::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-        }
-    }
-
-    &:active {
-        transform: translateY(-1px);
-        box-shadow: $shadow-small;
-    }
-
-    &--white {
-        color: $color-white;
-
-        &::after {
-            
-        }
-    }
-
-    &--grey {
-        color: $color-grey-dark;
-    }
-    
-    &--animated {
-        animation: moveInButton .5s ease-out .75s;
-        animation-fill-mode: backwards;
-    }
-}
-
-// FIX THIS - NOT DRY
-// It should only be nessasary to have one button class, but the submit button won't currnetly inherit.
-input[type=submit] {
-    background-color: transparent;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    margin: 1rem;
-    display: inline-block;
+.btn-1 {
+    border: 1px solid black;
     border-radius: 5px;
-    border: transparent;
-    transition: all .5s;
-    /* used to hide the btn::after effect below */
-    position: relative;
-    font-size: $default-font-size;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    
 }
-
-
-
-

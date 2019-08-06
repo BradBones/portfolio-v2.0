@@ -6,21 +6,30 @@
     grid-column: center-start / center-end; 
 }
 
+// .cards-container {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-template-rows: repeat(2, 1fr) ;
+//     grid-gap: 10rem;
+
+//     margin: 10rem 0;
+
+
+// }
+
 .cards-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr) ;
-    grid-gap: 10rem;
-
-    margin: 10rem 0;
-
-
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .card {
     background-color: #fff; // TESTING
     height: 55rem;
     width: 45rem;
+    margin: 4rem;
 
     border: 1px solid rgb(230, 230, 230);
     border-radius: 10px;

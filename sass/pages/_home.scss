@@ -1,10 +1,16 @@
-// GRID LAYOUT
-.container {
-    display: grid;
-    grid-template-rows: min-content min-content repeat(3, min-content);
+// // GRID LAYOUT
+// .container {
+//     display: grid;
+//     grid-template-rows: min-content min-content repeat(3, min-content);
     
-    grid-template-columns:
-        [full-start] minmax(6rem, 1fr)
-        [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
-        [center-end] minmax(6rem, 1fr) [full-end];
+//     grid-template-columns:
+//         [full-start] minmax(6rem, 1fr)
+//         [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+//         [center-end] minmax(6rem, 1fr) [full-end];
+// }
+
+
+// Main page grid removed and new main-content div added to control responsive layout flow.
+.main-content {
+    margin: 0 15rem;
 }
