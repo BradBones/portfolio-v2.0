@@ -84,10 +84,11 @@ body {
   color: #000; }
 
 .cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin: 7rem 0 7rem 0; }
+  .cards-container--row-1, .cards-container--row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
 
 .card {
   background-color: #fff;
@@ -231,6 +232,7 @@ body {
 .skills-box-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center; }
 
 .skills-box {

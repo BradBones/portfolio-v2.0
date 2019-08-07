@@ -18,11 +18,15 @@
 // }
 
 .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
+    // Top & bottom section margins
     margin: 7rem 0 7rem 0;
+
+    &--row-1, &--row-2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     
 }
 
