@@ -2,8 +2,8 @@
     background-color: #fff;
     color: #000; // TESTING
 
-    display: grid;
-    grid-column: center-start / center-end;
+    // display: grid;
+    // grid-column: center-start / center-end;
 
     margin-bottom: 20rem;
 
@@ -11,12 +11,16 @@
 
 // OVERALL ELEMENT
 .skills-box-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5rem;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // grid-gap: 5rem;
 
-    align-items: center;
-    justify-items: center;
+    // align-items: center;
+    // justify-items: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -24,11 +28,13 @@
 .skills-box {
     background-color: #fff; // TESTING
     height: 35rem;
-    width: 25rem;
+    //width: 25rem;
+    width: 23rem;
 
     border: 1px solid rgb(230, 230, 230);
     border-radius: 10px;
     padding: 2rem;
+    margin: 1rem;
     box-shadow: 0 2rem 5rem rgba(#000, 0.1);
 
     display: grid;
