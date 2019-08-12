@@ -2,10 +2,10 @@
     background-color: #fff;
     color: #000; // TESTING
 
-    // display: grid;
-    // grid-column: center-start / center-end;
-
     margin-bottom: 20rem;
+    // left & right margins force the skills-box-container to wrap at the same breakpoint as the works cards.
+    margin-left: 3rem;
+    margin-right: 3rem;
 
 }
 
@@ -16,15 +16,8 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+
     
-    // Then use a media query to 
-    &--row-1, &--row-2 {
-        @media screen and (min-width: 1000px) {
-            // display: flex;
-            // flex-wrap: wrap;
-            
-        }
-    }
 }
 
 // INDIVIDUAL FEATURES
@@ -91,7 +84,7 @@
         align-self: center;
 
         &--1 {
-            fill: url(#linear--1);
+            fill: url(#linear--1); // These refer to the SVG icon codes in HTML
         }
 
         &--2 {

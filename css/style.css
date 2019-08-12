@@ -13,10 +13,10 @@ body {
   font-family: "Lato", sans-serif;
   color: #636363;
   font-weight: 300;
-  line-height: 1.6; }
+  line-height: 1.6;
+  width: fit-content; }
 
 .header {
-  grid-column: full-start / full-end;
   background-image: linear-gradient(rgba(233, 225, 225, 0.5) 15%, #f9f7f6); }
 
 .hero-container {
@@ -100,7 +100,7 @@ body {
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
   display: grid;
   grid-template-rows: min-content min-content 1fr min-content;
-  grid-template-columns: repeat(3, 1fr) min-content;
+  grid-template-columns: repeat(3, minmax(15rem, 1fr));
   overflow: hidden; }
   .card .project-hero-img {
     height: 250px;
@@ -227,7 +227,9 @@ body {
 .skills {
   background-color: #fff;
   color: #000;
-  margin-bottom: 20rem; }
+  margin-bottom: 20rem;
+  margin-left: 3rem;
+  margin-right: 3rem; }
 
 .skills-box-container {
   display: flex;
@@ -469,76 +471,6 @@ body {
   top: 0;
   transform: rotate(-135deg);
   background-color: #5c040e; }
-
-.popup {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 4000;
-  opacity: 1;
-  visibility: hidden;
-  transition: all 0.3s; }
-  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
-    .popup {
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
-      background-color: rgba(0, 0, 0, 0.3); } }
-  .popup__content {
-    width: 75%;
-    background-color: white;
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    overflow: hidden;
-    display: table;
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.25);
-    transition: all 0.5s .2s; }
-  .popup__left {
-    width: 33.333333%;
-    display: table-cell; }
-  .popup__right {
-    width: 66.666666%;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 3rem 5rem; }
-  .popup__img {
-    display: block;
-    width: 100%; }
-  .popup__text {
-    font-size: 1.4rem;
-    margin-bottom: 4rem;
-    -moz-column-count: 2;
-    -moz-column-gap: 4rem;
-    -moz-column-rule: 1px solid #aaa;
-    column-count: 2;
-    column-gap: 4rem;
-    column-rule: 1px solid #aaa;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto; }
-  .popup:target {
-    opacity: 1;
-    visibility: visible; }
-  .popup:target .popup__content {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1); }
-  .popup__close:link, .popup__close:visited {
-    color: #777;
-    position: absolute;
-    line-height: 1;
-    top: 2rem;
-    right: 3rem;
-    font-size: 6rem;
-    font-weight: 100;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.2s; }
-  .popup__close:hover {
-    color: #bb0a1e; }
 
 .social-icons-container--footer {
   margin-left: 1rem;

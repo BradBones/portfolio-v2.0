@@ -1,11 +1,10 @@
 
 @import "base/variables";
 @import "base/reset";
-// @import "base/utilities";
+// @import "base/utilities"; Review utilites
 
 @import "pages/home";
 
-//@import "layout/topbar";
 @import "layout/header";
 @import "layout/works";
 @import "layout/bio";
@@ -14,10 +13,7 @@
 
 @import "components/logo";
 @import "components/navigation";
-@import "components/popup";
+//@import "components/popup"; Look for JS lightbox feature
 @import "components/social-links";
 @import "components/buttons";
 
-// @import "components/works-cards";
-// @import "components/skills-boxes";
-// @import "components/contact-form";

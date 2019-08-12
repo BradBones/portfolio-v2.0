@@ -1,12 +1,8 @@
 .header {
-    grid-column: full-start / full-end;
-
-    //background-color: $color-grey-light-1;
     background-image: linear-gradient(rgba(233, 225, 225, 0.5) 15%, $color-grey-light-1);   
 }
 
 .hero-container {
-    
     display: grid;
     
     grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 14rem)) minmax(6rem, 1fr);

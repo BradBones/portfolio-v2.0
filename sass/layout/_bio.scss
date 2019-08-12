@@ -1,15 +1,9 @@
 .bio {
     background-color: #fff;
 
-    // Centers the section in the page container
-    //grid-column: center-start / center-end;
-
     display: grid;
     grid-template-columns: minmax(45rem, 98rem);
-    justify-content: center;
-    //margin: 0 30rem; // needs media queries
-
-    
+    justify-content: center;  
 }
 
 .bio-box {
@@ -40,11 +34,7 @@
 }
 
 // .bio-subheading {
-//     font-weight: normal;
-//     margin-bottom: 2rem;
-
-//     grid-row: 2 / 3;
-//     grid-column: 1 / -1;
+// 
 // }
 
 .bio-text {
@@ -62,7 +52,6 @@
     width: auto;
     border-radius: 50%;
     
-
     grid-row: 3 / 4;
     grid-column: 4 / 5;
 

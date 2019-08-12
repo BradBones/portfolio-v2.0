@@ -43,7 +43,7 @@
 
     display: grid;
     grid-template-rows: min-content min-content 1fr min-content;
-    grid-template-columns: repeat(3, 1fr) min-content;
+    grid-template-columns: repeat(3, minmax(15rem, 1fr));
     //row-gap: 10px;
     overflow: hidden;
     
